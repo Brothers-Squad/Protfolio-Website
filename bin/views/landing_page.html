@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/tab.css" />
+    <link rel="stylesheet" href="/stylesheets/mobile.css" />
+    <link rel="images" href="images/" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <script src="/javascripts/scripts.js"></script>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="blur-layer">
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+            <img src="images/web-icons/broken-mobile.png" class="logo" alt="" style="width:50px" />
+            <h2>Switch to Desktop Mode</h2>
+            <p>For the better experience, please switch to desktop mode.</p>
+            <div class="button" onclick="reloadAndCheck();">
+                Okay!
+            </div>
+        </div>
+
+        <div class="white-layer">
+            <header>
+                <div class="logo">
+                    <div class="row">
+                        <img src="images/me.jpg" class="logo" alt="" style="width: 150px" />
+                        <div class="spacer"></div>
+                        <h1>Aakash Panwar</h1>
+                    </div>
+                </div>
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="menu-list" id="menuList">
+                        <li><a id="dashboard" class="pages" href="#">Portfolio</a></li>
+                        <li><a id="about" class="pages" href="#">About</a></li>
+                        <li><a id="contact" class="pages" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="cv">
+                <div class="profile-background">
+                    <div class="me">
+                        <div class="profile">
+                            <div class="email-container">
+                                <div class="email">
+                                    <h5 id="emailAddress">panwara925@gmail.com</h5>
+                                    <div class="spacer"></div>
+                                    <div class="button-copy" onclick="copyEmailAddress()">Copy</div>
+                                </div>
+                            </div>
+                            <img src="images/me.jpg" class="Protfolio-Profile" alt="" />
+                            <h1>Building App, Websites, Brand and Experience</h1>
+
+                            <div class="button">
+                                Learn More
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="compaines">
+                            <div class="logos-row">
+                                <div class="logo">
+                                    <img src="images/flutter.png" alt=" National Bank logo" />
+                                </div>
+                                <div class="logo">
+                                    <img src="images/cpp.png" alt=" Microsoft logo" />
+                                </div>
+                                <div class="logo">
+                                    <img src="images/javascript.png" alt=" Coca-Cola logo" />
+                                </div>
+                                <div class="logo">
+                                    <img src="images/nodejs.png" alt=" Adobe logo" />
+                                </div>
+                                <div class="logo">
+                                    <img src="images/python.png" alt=" Subway logo" />
+                                </div>
+                                <div class="logo">
+                                    <img src="images/css.png" alt=" Codecademy logo" />
+                                </div>
+                                <div class="logo">
+                                    <img src="images/html.png" alt=" Codecademy logo" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="collaberate">
+                        <section>
+                            <h1>"Code your dreams into reality, for in the language of software lies the power to shape
+                                tomorrow."</h1>
+                        </section>
+                        <div class="divider"></div>
+                        <div class="scroll-container">
+                            <div class="scroll-content">
+                                <div class="row" id="cardContainer"></div>
+                            </div>
+                            <button class="scroll-button prev-button">&lt;</button>
+                            <button class="scroll-button next-button">&gt;</button>
+                        </div>
+
+                    </section>
+                    <div class="me">
+                        <section>
+                            <div class="hand-shake"></div>
+                            <h1>Tell me about your next project</h1>
+                            <div class="row">
+                                <div class="button" onclick="emailMe()">
+                                    Email me
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <div class="spacer"></div>
+                                <div class="whatsapp" onclick="whatsappMe()">
+                                    Whatsapp
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+
+                        </section>
+                        <div class="divider"></div>
+                        <div class="divider-footer">
+                            <h6>
+                                &copy; 2024 All right reserved
+                            </h6>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <footer></footer>
+            <div class="social-media">
+                <div class="spacer"></div>
+                <a href=""><i class="bi-"></i> </a>
+                <a href=""><i class="bi-facebook"></i> </a>
+                <div class="spacer"></div>
+                <a href="https://www.instagram.com/____.a.a.k.a.s.h.____/" target="_blank"><i class="bi-instagram"></i>
+                </a>
+                <div class="spacer"></div>
+                <a href="https://www.linkedin.com/in/aakash-panwar-633b45232/" target="_blank"><i
+                        class="bi-linkedin"></i> </a>
+                <div class="spacer"></div>
+            </div>
+
+            <a href="#" id="privacyPolicy">
+                <div class="pPolicy">
+                    <p>Designed and Coded with ❤️ by Aakash Panwar</p>
+                    <h5>Privacy Policy</h5>
+                </div>
+            </a>
+
+            <div class="store">
+                <a href=""><img class="play-store" src="images/play-store.png" alt="" />
+                </a>
+                <div class="spacer"></div>
+                <a href=""><img class="app-store" src="images/app-store.png" alt="" />
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
