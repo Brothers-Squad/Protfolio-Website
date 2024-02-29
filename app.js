@@ -9,21 +9,21 @@ app.listen(port, "0.0.0.0", () => {
 });
 
 // Serve static files from the 'public' directory
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/bin/public"));
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/views/landing_page.html");
+  res.sendFile(__dirname + "/bin/views/landing_page.html");
 });
 app.get("/dashboard", function (req, res) {
-  res.sendFile(__dirname + "/views/landing_page.html");
+  res.sendFile(__dirname + "/bin/views/landing_page.html");
 });
 app.get("/about", function (req, res) {
-  res.sendFile(__dirname + "/views/about/about.html");
+  res.sendFile(__dirname + "/bin/views/about/about.html");
 });
 app.get("/contact", function (req, res) {
-  res.sendFile(__dirname + "/views/contact/contact.html");
+  res.sendFile(__dirname + "/bin/views/contact/contact.html");
 });
 app.get("/privacy_policy", function (req, res) {
-  res.sendFile(__dirname + "/views/privacypolicy/privacy_policy.html");
+  res.sendFile(__dirname + "/bin/views/privacypolicy/privacy_policy.html");
 });
 
 var server = app.listen(port, function () {
