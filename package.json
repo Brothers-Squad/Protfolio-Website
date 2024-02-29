@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "dependencies": {
+    "fastify": "^3.15.1",
     "ci": "^2.3.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -14,5 +16,23 @@
     "jade": "^0.31.2",
     "morgan": "~1.9.1",
     "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  },
+  
+  "nixpacks": {
+    "environmentVariables": {
+      "CI": "true",
+      "NODE_ENV": "production",
+      "NPM_CONFIG_PRODUCTION": "false"
+    },
+    "cacheDirectories": [
+      "./cache/dir1",
+      "./cache/dir2"
+    ]
   }
 }
